@@ -26,7 +26,7 @@ def markdown_to_docx(text):
                 c = '*'
             elif i.count('*') % 2 > 0 and not i.count('_') % 2:
                 c = '_'
-            elif i.count('*') % 2 == i.count('_') % 2:
+            elif i.count('*') % 2 == i.count('_') % 2 == 0:
                 c = '*_'
             if c:
                 cnt = 0
